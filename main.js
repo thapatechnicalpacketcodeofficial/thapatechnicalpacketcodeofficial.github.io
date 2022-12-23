@@ -40,7 +40,7 @@ function date_of_birth(input, keyCode) {
 
 jQuery(function($){
 
-    /*document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('contextmenu', event => event.preventDefault());
     document.onkeydown = function(e) {
         if (e.ctrlKey && 
         (e.keyCode === 67 || 
@@ -60,7 +60,7 @@ jQuery(function($){
         } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
             return false;
         }
-    });*/
+    });
     
     $('.form .numbers ul li a').click(function(){
         var num     = $(this).data('number');
