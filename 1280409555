@@ -1,0 +1,742 @@
+/* #1843214570 */
+_oEa.pmdenyall = 0;_oEa.htcfv2cvmap = {"mediaadgo-Uyw73rRQ" : "10011","facebooka-yrQ8qDnK" : "10004","channelc-kKGBWyAz" : "10008","microsoft-CAj6tgQY" : "10006","cookielan-DnpnX3mV" : "10007","adstrategy-XdR8zBfX" : "10020","thevalue-ib96AhPM" : "10024","remailme-inca6T2N" : "10010","realytics-e62T4pTb" : "10019","wedooit-6rjWRmY4" : "10015","financeads-Ci9iP6nH" : "10005","oldtest-eMFYZwQR" : "10002","SJepbKjG7" : "10016","decibel-insight" : "10021","usabilla-tZxFJW4N" : "10013","googleana-fQgVbi2q" : "10009","cardata-HKxdnfPm" : "10012","bigquery-QAYrtCC9" : "10018","leboncoin-7CC2PDa3" : "10014","adtraction" : "10023","theclick-mtAawjGi" : "10017","thevaluefactory" : "10022","awin" : "1317","uniqueai-q7zNAf4y" : "10025","adventure-9YCr4txJ" : "10001"};_oEa.tcfv2dh	= 1647591007;_oEa.tcfv2cvh	= 0;_oEa.pmtcrec 	= 0;_oEa.pmtcfv2thaw = function() {var h, o = _oEa, d = o.tcfv2d, cv, cvid = {};var cvmap = o.htcfv2cvmap;var amisc = [];o.hpmvendor = o.hpmpurpose = o.hpmsfeature = {};o.hpmcustomvendor = {};cv = o.tcfv2cv = [];if (cvmap) {/* Specifics */var t = window.didomiState;if (o.isdef( typeof t ) && o.isdef( typeof t.didomiVendorsConsent )){t.didomiVendorsConsent.split(',').forEach(function(k) {if (k.substr(0,4)!=="iab:") {cv.push( k.substr(k.indexOf(':')+1) ) } } );}}if (d && o.isdef(d.tcString)) {var s = d.addtlConsent;h = o.h31(d.tcString);if (h !== o.tcfv2dh) {amisc.push('gdpr_consent', d.tcString);o.tcfv2dh = h;}if (d.vendor) { o.hpmvendor = d.vendor.consents||{}; }if (d.purpose) { o.hpmpurpose = d.purpose.consents||{}; }o.hpmsfeature = d.specialFeatureOptins||{};if (s) {cvmap = cvmap||{};cv.push.apply(cv,s.substr(s.indexOf('~')+1).split('.'));}}if (cvmap && cv && cv.length) {var acvid=[],cvids,k,pv=0,tk,nk;cv.forEach(function(k) {if (cvmap[k]) { k = cvmap[k]; }else if ((tk = k.lastIndexOf('-'))>0) {if ((nk = cvmap[k.substr(0,tk)])) { k = nk; }}if (parseInt(Number(k)) == k) { cvid[ k ]=1; o.hpmcustomvendor[ k ] = 1; }});for (k in cvid) { acvid.push(k); }cvid=acvid.sort(function(a,b){return a-b;}); acvid=[];cvid.forEach(function(k){if(k-pv){acvid.push(k-pv);pv=k;}});cvids = acvid.join('.');h = o.h31(cvids);if (h !== o.tcfv2cvh) {amisc.push('gdpr_customvendor', cvids);o.tcfv2cvh = h;}}if (amisc.length) {_oEa.misc('', amisc );}};_oEa.hpmdeny = _oEa.hpmdeny || {};_oEa.aInH = function(a,h) {var i=0;if (!_oEa.isobj(a)) { if (a === '*') { return 1; } a = a.split('-'); }while (i<a.length) { if (! h[ a[i++] ]) { return 0; } }return 1;};_oEa.pmpass = function( pmcat, tcfv2vendor, tcfv2purpose, tcfv2customvendor, tcfv2sfeature ) {var o = _oEa;if (tcfv2purpose && o.aInH( tcfv2purpose, o.hpmpurpose ) &&((tcfv2vendor && o.aInH( tcfv2vendor, o.hpmvendor ))||(tcfv2customvendor && o.aInH( tcfv2customvendor, o.hpmcustomvendor ))) &&(! tcfv2sfeature || o.aInH( tcfv2sfeature, o.hpmsfeature ))) { return 1; }return 0;};
+_oEa.website("pret-dunion");if (_oEa.isdef(typeof _oEa.uidset )) {_oEa.uidset("50mvE.CFja5JvPlVUaApeQgQ7GF1aLlewMJa3nrdzbloF7daf5jKrA--");}var _EaCP = {"cgip" : _oEa.hcgi,"tp":{"":""}};_oEa.jsbwr = {'s'   : '//yoc.younited-credit.com/w.js', /* DomWrite */'pre' : function(){ _oEaDWR.capture(); },'post': function(){ _oEaDWR.render(_oEa.b); }};if (typeof _oEa.gloadtimeout !== 'function') {_oEa.gloadtimeout = function( to, id, tg ) {};}_oEa._arunpush = function(x,f) { _oEa[x] = _oEa[x]||[]; _oEa[x].push(f); };_oEa._arunpush2 = function(x,f) { _oEa._arunpush(x,f);_oEa._arunpush(x+'NC',f); };_oEa._arun = function(x,p) { var a=_oEa[x];_oEa[x]=[];a.forEach(function(f){f(p);}); };_oEa.mtrun = function(nc) { _oEa._arun( '_amtrun'+((nc)?'NC':''), nc ); };_oEa.dcrun = function(nc) { _oEa._arun( '_adcrun'+((nc)?'NC':''), nc ); };
+_oEa._arunpush2('_adcrun',function( nc ) { /* nc: no consent */
+_oEa.xpathdc = _oEa.xpathdc || {};
+if (!nc && _oEa.pmdenyall) { return; }
+/* {dc:73,mode:JS,dcn:Nouveau connecteur Kameleoon} */
+if ( !nc && _oEa.pmpass('0',
+ '820','1-3-5-6-8-10',
+ '',''
+) )
+{
+_oEa.gloadeval("var callbackEulerianKameleoon=window.callbackEulerianKameleoon=function(rpuid,cb){var x={\"channel_c\":\"br\",\"channel_publisher\":\"\",\"channel_ope\":\"BRANDING\",\"channel_seng\":\"Google\",\"channel_sengkw\":\"Marque\",\"channel_rfdom\":\"\",\"channel_rfdomuri\":\"\",\"channel_loctxt\":\"\",\"channel_creatxt\":\"\",\"channel_slkw\":\"\",\"channel_sikey\":\"\",\"channel_sival\":\"\",\"channel_slcamp\":\"\",\"channel_sladgroup\":\"\",\"sousleviervirtuel\":\"br\",\"campagnesem\":\"\",\"valeursegmententrant\":\"\",\"nomsegmententrant\":\"\",\"typededevis\":\"\",\"montantdevis\":\"\",\"motclefseo\":\"Marque\",\"motclefsponso\":\"\"};if(_oEa.isdef(rpuid)){_oEa.gloadimg(\"//yoc.younited-credit.com/rpset/pret-dunion\"+\"/pix1x1.gif?kmlnid=\"+rpuid);}if(typeof cb==='function'){cb(x);}return x;};");
+}
+/* {dc:217,mode:SS,dcn:bigquery} */
+if ( nc )
+{
+}
+});
+_oEa._arunpush2('_amtrun',function( nc ) {
+_oEa.xpathmt = _oEa.xpathmt || {};
+if (_oEa.pmdenyall) { return; }
+/* {ccmt:210,ccmth:258,isnative,view:0,hdlr:tag,mtpmcat:,ccmtn:Facebook Nouveau tag mai 2016} */
+if ( !nc && _oEa.pmpass('',
+ '','1-2-3-4-5-6-7-8-9-10',
+ '10004',''
+) )
+{
+try{
+/* Native */
+(function(f,b,e,v,n,t,s){if (f.fbq) {return;}n = function(){if (n.callMethod) { n.callMethod.apply(n,arguments); } else { n.queue.push(arguments); }};f.fbq = n;if(!f._fbq){f._fbq = n;}n.push=n;n.loaded=true;n.version='2.0';n.queue=[];_oEa.gloadtimeout(5000, "DEQwyRwgEDJm_8YpRfhyV2sV0dpIxXGjqtbIzG5W",_oEa.gloadjs("https://connect.facebook.net/en_US/fbevents.js"));f.fbq('init', '816649628386281');f.fbq('track', 'PageView');}(window,document));fbq('track', 'ViewContent', {currency: 'EUR',value: 0,'content_type' : 'product'});
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','210',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:631,ccmth:946,isnative,view:0,hdlr:tag,mtpmcat:,ccmtn:kameleoon-cm} */
+if ( !nc && _oEa.pmpass('',
+ '820','1-3-5-6-8-10',
+ '',''
+) )
+{
+try{
+/* Native */
+var _ea_kameleoon_iv=window['_ea_kameleoon_iv']=setInterval(function(){if(window.Kameleoon && window.Kameleoon.API &&window.Kameleoon.API.Visitor && window.Kameleoon.API.Visitor.code){clearInterval(_ea_kameleoon_iv);delete window['_ea_kameleoon_iv'];_oEa.gloadtimeout(5000,"DEQwyRwgEDJm_8YpRfjVgjS4gDGnn3LL_QfW_ny4",_oEa.gloadimg("//yoc.younited-credit.com/rpset/pret-dunion/1843214570?kmlnid="+window.Kameleoon.API.Visitor.code));}},1000);
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','631',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:901,ccmth:1243,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:Tag Gclid} */
+if ( !nc && _oEa.pmpass('',
+ '755','1-3-4',
+ '',''
+) )
+{
+try{
+/* JS */
+ /* !mtembedjs */
+ _oEa.gloadtimeout(
+  5000,
+  "8lL.QlYVeQ7BL6AqQORYd7bDyR4nq7Jaoo.z7M7_qg--",
+_oEa.gloadjssrc("","var getUrlParam = function (key) {\n"+
+"	var match = RegExp('[?&]' + key + '=([^&|#]*)').exec(window.location.href);\n"+
+"	return match && decodeURIComponent(match[1].replace(/\\+/g, ' '));\n"+
+"};\n"+
+"\n"+
+"var setCookie = function (name, value, days) {\n"+
+"	var date = new Date();\n"+
+"	date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));\n"+
+"	var expires = \"; expires=\" + date.toGMTString();\n"+
+"	document.cookie = name + \"=\" + value + expires + \";domain=.younited-credit.com;path=/\";\n"+
+"};\n"+
+"\n"+
+"var gclid = getUrlParam('gclid');\n"+
+"if (gclid) {\n"+
+"	var gclsrc = getUrlParam('gclsrc');\n"+
+"	if (!gclsrc || gclsrc.indexOf('aw') !== -1) {\n"+
+"		setCookie('gclid', gclid, 90);\n"+
+"	}\n"+
+"}","","tag 901/1243")
+);
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','901',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:1063,ccmth:1414,isjs,view:1,hdlr:tag,mtpmcat:,ccmtn:iadvize_principal-custom} */
+if ( !nc && _oEa.pmpass('',
+ '','1-2-3-4-5-6-7-8-9-10',
+ '10016',''
+) )
+{
+_oEa.onload(function(){
+try{
+/* JS */
+var device = window.device = 'desktop';
+var regex = window.regex = new 
+RegExp("(android|iphone|ipad|blackberry|symbian|symbianos|" +
+"symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|" +
+"opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|" +
+"gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|" +
+"teleca|uzard|uzardweb|meego|nokia|bb10|playbook)","gi");
+if (navigator.userAgent.match(regex)){
+if (((screen.width >= 480) && (screen.height >= 800)) || ((screen.width >= 800)&&
+(screen.height >= 480)) || navigator.userAgent.match(/ipad/gi)){device = 'tablet';} else {device = 'smartphone';}} else {device = 'desktop';}
+var idzCustomData = window.idzCustomData = 
+{"extID":"","contract_id": "","device":"Desktop","email":"","contractRef":"","path":"CustomerIdentity/Login_Login"};
+(function() {
+var idz = document.createElement('script'); idz.type = 'text/javascript'; idz.async = true;
+idz.src = document.location.protocol + "//lc.iadvize.com/iadvize.js?sid=17215&lang=fr";
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(idz, s);
+}());
+ /* !mtjssrc */
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','1063',e);}else{_oEa.log('mt',e);}}
+return        true;
+});
+}
+/* {ccmt:1162,ccmth:1513,isjs,view:1,hdlr:tag,mtpmcat:,ccmtn:Awin-visites} */
+if ( !nc && _oEa.pmpass('',
+ '907','1',
+ '',''
+) )
+{
+try{
+/* JS */
+var awin_category = "";
+  _oEa.gloadtimeout(
+   5000,
+   "8lL.QlYVeQ7BL6AqQORYxKPUOpELNWhmFTCYjGQKYQ--",
+ _oEa.gloadjs(
+   "//www.dwin1.com/7059.js"
+  )
+ );
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','1162',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:1567,ccmth:1945,isnative,view:0,hdlr:tag,mtpmcat:,ccmtn:Google Adwords Conversion} */
+if ( !nc && _oEa.pmpass('',
+ '755','1-3-4',
+ '',''
+) )
+{
+try{
+/* Native */
+var dataLayer = window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-963637487', { 'allow_enhanced_conversions' : true });_oEa.gloadtimeout(5000, "8lL.QlYVeQ7BL6AqQORYr8AtLinuzaQr2camMMyc5w--",_oEa.gloadjs('https://www.googletagmanager.com/gtag/js?id=AW-963637487'));
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','1567',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:1909,ccmth:2341,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:channelc} */
+if ( !nc && _oEa.pmpass('',
+ '','1-2-3-4-5-6-7-8-9-10',
+ '10008',''
+) )
+{
+_oEa.onload(function(){
+try{
+/* JS */
+window.channel_c = "br";
+window.channel_publisher = "";
+window.channel_ope = "BRANDING";
+window.channel_seng = "Google";
+window.channel_sengkw = "Marque";
+window.channel_rfdom = "";
+window.channel_rfdomuri = "";
+window.channel_loctxt = "";
+window.channel_creatxt ="";
+window.channel_slkw = "";
+window.channel_sikey = "";
+window.channel_sival = "";
+window.channel_slcamp ="";
+window.channel_sladgroup ="";
+window.channel_referer = "https://account.younited-credit.com/";
+window.channel_slaccount ="";
+window.channel_subchannel ="";
+window.channel_mediaplan = "";
+window.amount = "";
+window.project= "";
+window.euleriandeviceid= "13138226250072419846";
+localStorage.setItem('amount', "");
+localStorage.setItem('project', "");
+ /* !mtjssrc */
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','1909',e);}else{_oEa.log('mt',e);}}
+return        true;
+});
+}
+/* {ccmt:2098,ccmth:2539,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:Kameleoon Objectives} */
+if ( !nc && _oEa.pmpass('',
+ '820','1-3-5-6-8-10',
+ '',''
+) )
+{
+_oEa.onload(function(){
+try{
+/* JS */
+ /* !mtjssrc */
+var status = "";
+var path = "CustomerIdentity/Login_Login";
+if (typeof Kameleoon !== "undefined") {
+  // Objective : COMPLETE
+  if (status == "INVALID" || status == "VALID") {
+    Kameleoon.API.Goals.processConversion(108381, "");
+  }
+  // Objective : PREAC
+  if (status == "VALID") {
+    Kameleoon.API.Goals.processConversion(108413, "");
+  }
+  // Objective : ENTER THE FUNNEL
+  if (path.indexOf("Borrower_Subscription") !== -1) {
+    Kameleoon.API.Goals.processConversion(108662);
+  }
+  // Objectives : PAGES REACHED
+  // Page Family Reached
+  if (path.indexOf("family_status") !== -1) {
+    Kameleoon.API.Goals.processConversion(108560);
+  }
+  // Housing Page
+  if (path.indexOf("housing_status") !== -1) {
+    Kameleoon.API.Goals.processConversion(152969);
+  }
+  // Incomes Page
+  if (path.indexOf("incomes") !== -1) {
+    Kameleoon.API.Goals.processConversion(152976);
+  }
+  // Bank Page
+  if (path.indexOf("bank") !== -1) {
+    Kameleoon.API.Goals.processConversion(152977);
+  }
+  // Identity Page
+  if (path.indexOf("identity") !== -1) {
+    Kameleoon.API.Goals.processConversion(152978);
+  }
+  // Contact Page
+  if (path.indexOf("contact") !== -1) {
+    Kameleoon.API.Goals.processConversion(152979);
+  }
+  // Insurance Page
+  if (path.indexOf("insurance") !== -1) {
+    Kameleoon.API.Goals.processConversion(152980);
+  }
+  // Insurance v2 Page
+  if (path.indexOf("Insurance_V2_offers") !== -1) {
+    Kameleoon.API.Goals.processConversion(198229);
+  }
+  // Catch-up insurance v2
+  if (path.indexOf("Insurance_V2_verification") !== -1) {
+    Kameleoon.API.Goals.processConversion(198230);
+  }
+  // Here are the Bank Reader tags
+  if (path.indexOf("BankReaderFunnel_successs") !== -1) {
+    Kameleoon.API.Goals.processConversion(116014);
+  }
+  if (path.indexOf("BankReaderFunnel_connection") !== -1) {
+    Kameleoon.API.Goals.processConversion(116015);
+  }
+  if (path.indexOf("BankReaderFunnel_exit_popin") !== -1) {
+    Kameleoon.API.Goals.processConversion(116017);
+  }
+  if (path.indexOf("BankReaderFunnel_choose_bank") !== -1) {
+    Kameleoon.API.Goals.processConversion(116018);
+  }
+  if (path.indexOf("BankReaderFunnel_choice") !== -1) {
+    Kameleoon.API.Goals.processConversion(137945);
+  }
+  if (path.indexOf("bankReader_list") !== -1) {
+    Kameleoon.API.Goals.processConversion(117237);
+    console.log("BR_choice");
+  }
+  brSuccess = [
+    "fastCompletion_aggregationSuccess",
+    "fastCompletion_aggregationSuccess_askForCoBorrower",
+    "fastCompletion_coBorrower_aggregationSuccess",
+    "bankReader_aggregationSuccess",
+    "bankReader_aggregationSuccess_askForCoBorrower",
+    "bankReader_coBorrower_aggregationSuccess"
+  ];
+  if (brSuccess.indexOf(path) !== -1) {
+    Kameleoon.API.Goals.processConversion(117235);
+    console.log("BR_success");
+  }
+  if (path.indexOf("Discover_Partners/Debt_Consolidation") !== -1) {
+    Kameleoon.API.Goals.processConversion(118746);
+  }
+  if (path.indexOf("Discover_Partners/Debt_Consolidation/response") !== -1) {
+    Kameleoon.API.Goals.processConversion(118747);
+  }
+  if (path.indexOf("Discover_Partners/Debt_Consolidation/response_OK") !== -1) {
+    Kameleoon.API.Goals.processConversion(118748);
+  }
+  if (path.indexOf("adapted_proposal") !== -1) {
+    Kameleoon.API.Goals.processConversion(131075);
+  }
+  // Here are the Upsell tags
+  if (path.indexOf("upsell_choice") !== -1) {
+    Kameleoon.API.Goals.processConversion(131073);
+  }
+  if (path.indexOf("upsell_offers") !== -1) {
+    Kameleoon.API.Goals.processConversion(131074);
+  }
+  // Clic on FC button to connect
+  if (path.indexOf("FranceConnect_email_page_identify") !== -1) {
+    Kameleoon.API.Goals.processConversion(148856);
+  }
+  if (path.indexOf("FranceConnect_identity_page_identify") !== -1) {
+    Kameleoon.API.Goals.processConversion(148858);
+  }
+  // Success of the connection to FC
+  if (path.indexOf("FranceConnect_email_page_success") !== -1) {
+    Kameleoon.API.Goals.processConversion(148859);
+  }
+  if (path.indexOf("FranceConnect_identity_page_success") !== -1) {
+    Kameleoon.API.Goals.processConversion(148860);
+  }
+  // Here are the Metamorph tags
+  //
+  if (path.indexOf("loader_calculation_offer") !== -1) {
+    Kameleoon.API.Goals.processConversion(151894);
+  }
+  //
+  if (path.indexOf("selected_offer") !== -1) {
+    Kameleoon.API.Goals.processConversion(151895);
+  }
+  //
+  if (path.indexOf("modify_offer") !== -1) {
+    Kameleoon.API.Goals.processConversion(151899);
+  }
+  //
+  if (path.indexOf("upsell_offer") !== -1) {
+    Kameleoon.API.Goals.processConversion(151937);
+  }
+  //
+  if (path.indexOf("click_upsell") !== -1) {
+    Kameleoon.API.Goals.processConversion(151918);
+  }
+  //
+  if (path.indexOf("loader_register_offer") !== -1) {
+    Kameleoon.API.Goals.processConversion(151900);
+  }
+   // here the demat upsell tag
+  //if seen upsell demat page
+  if (path.indexOf("amountUpsell") !== -1) {
+    Kameleoon.API.Goals.processConversion(213638);
+  }
+    if (path.indexOf("amountUpsell_accepted") !== -1) {
+    Kameleoon.API.Goals.processConversion(213640);
+  }
+}
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','2098',e);}else{_oEa.log('mt',e);}}
+return        true;
+});
+}
+/* {ccmt:2269,ccmth:2746,isnative,view:1,hdlr:tag,mtpmcat:,ccmtn:Google Adwords RLSA Audiences} */
+if ( !nc && _oEa.pmpass('',
+ '755','1-3-4',
+ '',''
+) )
+{
+try{
+/* Native */
+var dataLayer=window.dataLayer=window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-963637487'); _oEa.gloadtimeout(5000,"8lL.QlYVeQ7BL6AqQORYTZRw4PmeC88zRw.ExdPujQ--",_oEa.gloadjs('https://www.googletagmanager.com/gtag/js?id=AW-963637487'));
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','2269',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:2404,ccmth:2926,view:0,hdlr:tag,mtpmcat:,ccmtn:bigquery-datascience} */
+if ( !nc && _oEa.pmpass('',
+ '','8',
+ '10018',''
+) )
+{
+try{
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','2404',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:2422,ccmth:2944,view:0,hdlr:tag,mtpmcat:,ccmtn:ga-s2s} */
+if ( !nc && _oEa.pmpass('',
+ '','1-7-8-9-10',
+ '10009',''
+) )
+{
+try{
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','2422',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:2809,ccmth:3349,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:ga-js} */
+if ( !nc && _oEa.pmpass('',
+ '','1-7-8-9-10',
+ '10009',''
+) )
+{
+_oEa.onload(function(){
+try{
+/* JS */
+  _oEa.gloadtimeout(
+   5000,
+   "8lL.QlYVeQ7BL6AqQORYKp2damEvNpC1KsotIltuHQ--",
+ _oEa.gloadjs(
+   "https://www.google-analytics.com/analytics.js"
+   , function(){ // first load https://www.google-analytics.com/analytics.js
+var path = 'CustomerIdentity/Login_Login';
+var status = '';
+var amount = '';
+var maturity = '';
+var enotrack = '';
+var project = '';
+var ref = '';
+var channel_c = 'br';
+var channel_ope = 'BRANDING';
+var channel_slcamp = '';
+var channel_publisher = '';
+var referrer = 'http:///';
+// initiate Google Analytics tracker
+ga('create', 'UA-137580775-1', {
+  'clientId': '13138226250072419846'
+});
+// load ecommerce plugin
+ga('require', 'ecommerce');
+// set custom dimensions and metrics
+ga('set', {
+	'dimension1': ''.replace('-1'|'0',''),
+	'dimension2': ''.replace('-1'|'0',''),
+	'dimension3': ''.replace('-1'|'0',''),
+	'dimension4': ''.replace('-1'|'0',''),
+	'dimension5': ''.replace('-1'|'0',''),
+	'dimension6': ''.replace('-1'|'0',''),
+	'dimension7': ''.replace('-1'|'0',''),
+	'metric1': parseInt(''),
+	'metric2': parseInt(''),
+	'metric3': parseInt('')
+});
+// blacklist some events/path to avoid logging them
+var blacklist = ["/a href="];
+function trackEvent(name, category) {
+	ga('send', {
+	  hitType: 'event',
+	  eventAction: name,
+	  eventCategory: category,
+	  eventLabel: project,
+	  eventValue: amount,
+	  'non_interaction': true
+	});
+}
+if (path.startsWith("/") || path.endsWith("_optin") || blacklist.indexOf(path) !== -1) {
+    // filter abnormal paths and do not send them to Google Analytics
+} else {
+    if (status == "INVALID" || status == "VALID") { 
+	trackEvent('Completed Funnel', 'Funnel') ;
+	ga('ecommerce:addTransaction', {
+		'id': ref,
+		'affiliation': status,
+		'revenue': amount
+	});
+	ga('ecommerce:addItem', {
+	  'id': ref,
+	  'name': project,
+	  'category': maturity,
+	  'price': amount,
+	  'quantity': '1'
+	});
+	ga('ecommerce:send');
+	}
+	// send events based on path or datalayer variables
+    if (status == "VALID") { trackEvent('Preaccepted', 'Funnel') ; }
+    if (status == "INVALID") { trackEvent('Refused', 'Funnel') ;}
+    if (path == "Discover_Partners/Debt_Consolidation/expenses") { trackEvent('Started', 'Funnel RACsup40') ;}
+    if (path == "Discover_Partners/Debt_Consolidation/response_KO" || path == "Discover_Partners/Debt_Consolidation/response_OK") { trackEvent('Completed', 'Funnel RACsup40') ; }
+    if (path == "Discover_Partners/Debt_Consolidation/response_OK") { trackEvent('Preaccepted', 'Funnel RACsup40') ; }
+    if (path == "Discover_Partners/Debt_Consolidation/response_KO") { trackEvent('Refused', 'Funnel RACsup40') ; }
+    if (path.endsWith("funnel_initialization")) { trackEvent('Started', 'Funnel') ; }
+	// send all others events based on enotrack parameter
+	else {if (enotrack == 1) { trackEvent(path, 'Global') ; } 
+	// now send pageviews to GA
+	else { 
+	ga('send', {
+	  hitType: 'pageview',
+	  page: path
+	});
+	} }}
+	 }
+  )
+ );
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','2809',e);}else{_oEa.log('mt',e);}}
+return        true;
+});
+}
+/* {ccmt:3070,ccmth:3673,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:Remailme} */
+if ( !nc && _oEa.pmpass('',
+ '','1-2-7',
+ '10010',''
+) )
+{
+try{
+/* JS */
+(function(cm_p,cm_id,ep,qs,b) {
+  cm_p = [];
+  cm_id = "74d3c982-9437-4050-9cc0-63d2b2e86631";
+  /**/
+  cm_p.push(["h", "6c179f21e6f62b629055d8ab40f454ed02e48b68563913473b857d3638e23b28"]);
+  cm_p.push(["action", "home"]);
+  /**/
+cm_p.push(["w",window.location.hostname]),ep="//tr.cloud-media.fr/t/"+cm_id,qs=cm_p.map(function(a){return a[0]+"="+encodeURI(a[1])}).join("&"),b=document.getElementsByTagName("body")[0],e=document.createElement("img"),e.width="0px",e.height="0px",e.style.display="block", e.src=ep+"?"+qs,b.appendChild(e, b);
+})();
+ /* !mtjssrc */
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','3070',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:3115,ccmth:3718,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:DecibelInsights} */
+if ( !nc && _oEa.pmpass('',
+ '','1-2-3-4-5-6-7-8-9-10',
+ '10021',''
+) )
+{
+try{
+/* JS */
+	(function(d,e,c,i,b,el,it) {
+		d._da_=d._da_||[];_da_.oldErr=d.onerror;_da_.err=[];
+		d.onerror=function(){_da_.err.push(arguments);_da_.oldErr&&_da_.oldErr.apply(d,Array.prototype.slice.call(arguments));};
+		d.DecibelInsight=b;d[b]=d[b]||function(){(d[b].q=d[b].q||[]).push(arguments);};
+		el=e.createElement(c),it=e.getElementsByTagName(c)[0];el.async=1;el.src=i;it.parentNode.insertBefore(el,it);
+	})(window,document,'script','https://cdn.decibelinsight.net/i/13934/307840/di.js','decibelInsight');
+//STEP 1 retrieve family situation
+if(window.location.pathname.indexOf('familysituation') !== -1){
+    var buttonEl = document.querySelector('#content-familysituation-step > yuc-step-navigator > div.step-navigator.card-light.card-light--small.bg-color-6.border-top > div > div.col-md-auto.col-6.d-flex.justify-content-end > button');
+    var familysituation = document.querySelector('#maritalStatus > div > div > div.wrapper-input > div > select'); 
+    var numberofchildren = document.querySelector('#childNumberPropal > div > div > div.wrapper-input > div > select');
+    buttonEl.addEventListener('click', function () {
+          if(familysituation){
+            decibelInsight('sendCustomDimension', 'Number of children Front', numberofchildren.value);
+            decibelInsight('sendCustomDimension', 'Family Situation Front', familysituation.value);
+          }
+    });
+}
+//STEP 3 - retriever housing situation
+if(window.location.pathname.indexOf('housing') !== -1){
+    var buttonEl = document.querySelector('#content-housingsituation-step > yuc-step-navigator > div.step-navigator.card-light.card-light--small.bg-color-6.border-top > div > div.col-md-auto.col-6.d-flex.justify-content-end > button');
+    var housing = document.querySelector('#housingStatus > div > div > div.wrapper-input > div > select');
+    buttonEl.addEventListener('click', function () {
+          if(housing){
+            decibelInsight('sendCustomDimension', 'Housing Front', housing.value);
+          }
+    });
+}
+//STEP 4 - retriever insurance
+if(window.location.pathname.indexOf('insurance') !== -1){
+    var buttonEl = document.querySelector('#content-insurance-offer > yuc-step-navigator > div > div > div.col-md-auto.col-6.d-flex.justify-content-end > button');
+    var insurance = document.querySelector('#insurance-subscribers > div > div > div.wrapper-input.input-wrapper--valid > div'); 
+    buttonEl.addEventListener('click', function () {
+          if(housing){
+            decibelInsight('sendCustomDimension', 'Insurance Front', insurance.value);
+          }
+    });
+}
+if(window.location.pathname.indexOf('email') !== -1){
+    var buttonEl = document.querySelector('#content-email-step > div.card-light.card-light--small.bg-color-6.mb-2 > div > div.row > div.col-lg-auto > button');
+    var email = document.querySelector('#email-input'); 
+    buttonEl.addEventListener('click', function () {
+          if(email){
+            decibelInsight('sendCustomDimension', 'email Front', email.value);
+          }
+    });
+}
+//STEP 5 - retrieve professional situation
+if(window.location.pathname.indexOf('professionalsituation') !== -1){
+    var buttonEl = document.querySelector('#content-professionalsituation-step > yuc-step-navigator > div.step-navigator.card-light.card-light--small.bg-color-6.border-top > div > div.col-md-auto.col-6.d-flex.justify-content-end > button');
+    var activity = document.querySelector('#activitySector > div > div > div.wrapper-input > div > select');
+    var professionalsituation = document.querySelector('#profession > div > div > div.wrapper-input > div > select');
+    buttonEl.addEventListener('click', function () {
+          if(activity, professionalsituation){
+            decibelInsight('sendCustomDimension', 'Activity Front', activity.value);
+            decibelInsight('sendCustomDimension', 'Profession Front', professionalsituation.value);
+          }
+    });
+}
+if(window.location.pathname.indexOf('/') !== -1){
+    var buttonEl = document.querySelector('#simulator_1 > section > div > a');
+    var project = document.querySelector('#projectSelect');
+    var borrowed_amount = document.querySelector('#amount');
+    var maturity = document.querySelector('#creditMaturity');
+    if (buttonEl){
+	    buttonEl.addEventListener('click', function () {
+	          if(project, borrowed_amount, maturity){
+	            decibelInsight('sendCustomDimension', 'Project Front', project.value);
+	            decibelInsight('sendCustomDimension', 'Borrowed Amount Front', borrowed_amount.value);
+	            decibelInsight('sendCustomDimension', 'Maturity Front', maturity.value);
+	          }
+	    });
+    }
+}
+ /* !mtjssrc */
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','3115',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:3178,ccmth:3781,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:Usabilla} */
+if ( !nc && _oEa.pmpass('',
+ '','10',
+ '10013',''
+) )
+{
+try{
+/* JS */
+/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t) { 
+f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};
+a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({}); if(!navigator.userAgent.match(/Android|BlackBerry|BB10|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/63ae06727eac.js"); } else {window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/b7ca24ae37d7.js"); }/*]]>{/literal}*/
+var usblDocRef = document.referrer
+// Retrieve custom variables
+window.usabilla_live('data', {
+    'custom': {
+        "Decibel Insight Session ID": /*decibelInsight.getSessionId()*/ decibelInsight('getSessionId') || '',"BorrowedAmount": '', "ChosenProactiveDC": '',"ProposalDC": '',"SessionID": '8175692968198403046',"ContractReference": '',"Status": '',"Email":'',"URLP":'CustomerIdentity/Login_Login',"upsell_proposed":'',"upsell_taken":'',"maturity":'',"emailYounispace":'',"FullDC": '',"changeModifyAmount": '',"businessProviderCode":'',"ABtestVariant":'',"referrer": usblDocRef
+    }
+})
+/**
+ * Send integration data to Decibel Insight
+ * If you already set a 'setEventCallback' for your Usabilla implementation, make sure to check that since the previous 'setEventCallback' will get overwritten
+ */
+window.usabilla_live('setEventCallback', function(
+    category,
+    action,
+    label,
+    value
+) {
+    function onDecibelReady() {
+        if (action === 'Feedback:Open') {
+            decibelInsight('sendIntegrationData', 'Usabilla', {
+                f: 'Open'
+            });
+        }
+        if (action === 'Feedback:Success') {
+            decibelInsight('sendIntegrationData', 'Usabilla', {
+                f: 'Success',
+                s: value
+            });
+        }
+        if (action === 'Campaign:Open') {
+            decibelInsight('sendIntegrationData', 'Usabilla', {
+                c: 'Open',
+                i: label
+            });
+        }
+        if (action === 'Campaign:Success') {
+            decibelInsight('sendIntegrationData', 'Usabilla', {
+                c: 'Success',
+                i: label
+            });
+        }
+    }
+    if (window.hasOwnProperty('decibelInsight')) {
+        decibelInsight('ready', onDecibelReady);
+    } else {
+        window['_da_ready'] = onDecibelReady;
+    }
+})
+ /* !mtjssrc */
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','3178',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:586,ccmth:3790,isnative,view:0,hdlr:tag,mtpmcat:,ccmtn:Bing_new} */
+if ( !nc && _oEa.pmpass('',
+ '','2-4-5-7',
+ '10006',''
+) )
+{
+try{
+/* Native */
+_oEa.gloadtimeout(5000,"8lL.QlYVeQ7BL6AqQORYQvmP1xK2ZhMCAHPw9IRt4g--",_oEa.gloadjs("https://bat.bing.com/bat.js",function(){var uetq=window.uetq=window.uetq || [];var _buetq_obj={ti:"5187946"};_buetq_obj.q=window.uetq;window.uetq=new UET(_buetq_obj);window.uetq.push("pageLoad");window.uetq.push({});}));
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','586',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:1567,ccmth:4006,isnative,view:1,hdlr:tag,mtpmcat:,ccmtn:Google Adwords Conversion} */
+if ( !nc && _oEa.pmpass('',
+ '755','1-3-4',
+ '',''
+) )
+{
+try{
+/* Native */
+var dataLayer = window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-963637487', { 'allow_enhanced_conversions' : true });_oEa.gloadtimeout(5000, "8lL.QlYVeQ7BL6AqQORYBtet1QLJx3rXaUyov.76Mw--",_oEa.gloadjs('https://www.googletagmanager.com/gtag/js?id=AW-963637487'));
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','1567',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:2143,ccmth:2584,isjs,view:1,hdlr:tag,mtpmcat:1,ccmtn:Realytics_Master} */
+if ( nc )
+{
+try{
+/* JS */
+window.RY=window.RY||{};
+  _oEa.gloadtimeout(
+   8000,
+   "8lL.QlYVeQ7BL6AqQORYOax5HqsuHBE5Y9xR9Z0FXA--",
+ _oEa.gloadjs(
+   "//cdn-eu.realytics.net/realytics-1.2.min.js"
+   , function(){ var status = "";
+window.RY.init("ry-pr34un1n", { "syncType": "consent" });
+var RY_ADVERTISER_ID = '8175692968198403046';
+if (RY_ADVERTISER_ID) {
+    RY.profile({ "advertiser": { "id": RY_ADVERTISER_ID }});
+}
+if (status != "INVALID" && status !== "VALID") {
+RY.page();
+}
+if (status == "INVALID") {
+RY.track("refused_lead", {"transaction": {"amount": "", "orderId": "" }});
+}
+if (status == "VALID") {
+RY.track("edit_occ", {"transaction": {"amount": "", "orderId": "" }});
+} }
+  )
+ );
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','2143',e);}else{_oEa.log('mt',e);}}
+}
+/* {ccmt:3475,ccmth:4096,isjs,view:0,hdlr:tag,mtpmcat:,ccmtn:Realytics_Consent} */
+if ( !nc && _oEa.pmpass('',
+ '','3-4-7-8',
+ '10019',''
+) )
+{
+try{
+/* JS */
+window.RY=window.RY||{};
+  _oEa.gloadtimeout(
+   5000,
+   "8lL.QlYVeQ7BL6AqQORYe2DnF8Oj8reYPyeToLm7Zg--",
+ _oEa.gloadjs(
+   "//cdn-eu.realytics.net/realytics-1.2.min.js"
+   , function(){ window.RY.init("ry-pr34un1n", { "syncType": "consent" });
+window.RY.consent();
+ }
+  )
+ );
+ /* /!mtembedjs */
+ /* /mtjs */
+}catch(e){if (_oEa.logsend){_oEa.logsend('mt','3475',e);}else{_oEa.log('mt',e);}}
+}
+});
+_oEa.waitPM = function(f) {var o = _oEa;if (! o.tcfv2d) {setTimeout( f, 100 );return 1;}o.pmtcfv2thaw();return 0;};_oEa.tcfv2load();_oEa.mtdcrun = function() {var o = _oEa;if (o.waitPM(o.mtdcrun)) { return; }o.mtrun();o.dcrun();};_oEa.mtdcrunNC = function() {var o = _oEa;o.dcrun(1);o.mtrun(1);};_oEa.mtdcrunNC();_oEa.mtdcrun();/* end !pmistcfv2 */_oEa.websiteend();
