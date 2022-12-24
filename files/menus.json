@@ -1,0 +1,619 @@
+
+var menus_ruban={"menus":[
+{"titre":"espace client",
+"href":"","target":"","ref":"espaceclient",
+"notificationTitre":"",
+"notificationTexte":"",
+"colonnes":[
+{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"accueil espace client",
+"ref":"accueil","href":"#","target":"",
+"bulle":"accueil espace client",
+"new":""
+},{
+"titre":"suivi conso",
+"ref":"conso","href":"#","target":"",
+"bulle":"suivi conso",
+"new":""
+},{
+"titre":"suivi de commande",
+"ref":"suivicommande","href":"#","target":"",
+"bulle":"suivi de commande",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"mes avantages",
+"ref":"avantages","href":"#","target":"",
+"bulle":"mes avantages",
+"new":""
+},{
+"titre":"changer de mobile",
+"ref":"changermobile","href":"#","target":"",
+"bulle":"changer de mobile",
+"new":""
+},{
+"titre":"Orange Cin&eacute;day",
+"ref":"cineday","href":"#","target":"",
+"bulle":"Cin&eacute;day",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"d&eacute;couverte espace client",
+"ref":"decouverte","href":"#","target":"",
+"bulle":"d&eacute;couverte espace client",
+"new":""
+},{
+"titre":"espace client depuis le mobile",
+"ref":"depuismobile","href":"#","target":"",
+"bulle":"espace client depuis le mobile",
+"new":""
+},{
+"titre":"application Orange et moi",
+"ref":"orangeetmoi","href":"#","target":"",
+"bulle":"application Orange et moi",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"les r&eacute;seaux",
+"ref":"lesreseaux","href":"#","target":"",
+"bulle":"les r&eacute;seaux",
+"new":""
+},{
+"titre":"tout le service Orange",
+"ref":"satisfait","href":"#","target":"",
+"bulle":"satisfait quand vous l'&ecirc;tes",
+"new":""
+},{
+"titre":"agir au quotidien",
+"ref":"agir","href":"#","target":"",
+"bulle":"agir au quotidien",
+"new":""
+}]
+}
+]},
+{"titre":"boutique",
+"href":"","target":"","ref":"boutiques",
+"notificationTitre":"",
+"notificationTexte":"",
+"colonnes":[
+{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"accueil boutique",
+"ref":"accueil","href":"#","target":"",
+"bulle":"accueil boutique",
+"new":""
+},{
+"titre":"internet + TV + t&eacute;l&eacute;phone",
+"ref":"internet","href":"#","target":"",
+"bulle":"internet + TV + t&eacute;l&eacute;phone",
+"new":""
+},{
+"titre":"mobile",
+"ref":"mobile","href":"#","target":"",
+"bulle":"mobile",
+"new":""
+},{
+"titre":"internet et mobile",
+"ref":"internetmobile","href":"#","target":"",
+"bulle":"internet et mobile",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"fixe",
+"ref":"fixe","href":"#","target":"",
+"bulle":"fixe",
+"new":""
+},{
+"titre":"tablettes et cl&eacute;s internet",
+"ref":"tablettes","href":"#","target":"",
+"bulle":"tablettes et cl&eacute;s 3G",
+"new":""
+},{
+"titre":"iPad",
+"ref":"iPad","href":"#","target":"",
+"bulle":"iPad",
+"new":""
+},{
+"titre":"iPhone",
+"ref":"iPhone","href":"#","target":"",
+"bulle":"iPhone",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"suivi de commande",
+"ref":"suivicommande","href":"#","target":"",
+"bulle":"suivi de commande",
+"new":""
+},{
+"titre":"changer de mobile",
+"ref":"changermobile","href":"#","target":"",
+"bulle":"changer de mobile",
+"new":""
+},{
+"titre":"Livebox",
+"ref":"livebox","href":"#","target":"",
+"bulle":"livebox",
+"new":""
+},{
+"titre":"accessoires",
+"ref":"accessoires","href":"#","target":"",
+"bulle":"accessoires",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"boutique pro",
+"ref":"pro","href":"#","target":"",
+"bulle":"boutique pro",
+"new":""
+},{
+"titre":"Sosh",
+"ref":"sosh","href":"#","target":"",
+"bulle":"Sosh",
+"new":""
+},{
+"titre":"autonomie",
+"ref":"autonomie","href":"#","target":"",
+"bulle":"autonomie",
+"new":""
+}]
+}
+]},
+{"titre":"assistance",
+"href":"","target":"","ref":"assistance",
+"notificationTitre":"",
+"notificationTexte":"",
+"colonnes":[
+{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"accueil assistance",
+"ref":"accueil","href":"#","target":"",
+"bulle":"accueil assistance",
+"new":""
+},{
+"titre":"internet",
+"ref":"internet","href":"#","target":"",
+"bulle":"internet",
+"new":""
+},{
+"titre":"la fibre",
+"ref":"fibre","href":"#","target":"",
+"bulle":"la fibre",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"mobile",
+"ref":"mobile","href":"#","target":"",
+"bulle":"mobile",
+"new":""
+},{
+"titre":"Open",
+"ref":"open","href":"#","target":"",
+"bulle":"Open",
+"new":""
+},{
+"titre":"ligne fixe",
+"ref":"fixe","href":"#","target":"",
+"bulle":"ligne fixe",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"tester votre acc&egrave;s",
+"ref":"testeracces","href":"#","target":"",
+"bulle":"tester votre acc&egrave;s",
+"new":""
+},{
+"titre":"infos incidents",
+"ref":"infoincidents","href":"#","target":"",
+"bulle":"info incidents",
+"new":""
+},{
+"titre":"dossiers d&eacute;pannage",
+"ref":"depannage","href":"#","target":"",
+"bulle":"dossier d&eacute;pannage",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"forum d'entraide",
+"ref":"entraide","href":"#","target":"",
+"bulle":"forum d'entraide",
+"new":""
+},{
+"titre":"nous contacter",
+"ref":"nouscontacter","href":"#","target":"",
+"bulle":"nous contacter",
+"new":""
+},{
+"titre":"pour les pros",
+"ref":"pro","href":"#","target":"",
+"bulle":"pour les pros",
+"new":""
+}]
+}
+]},
+{"titre":"mail & cloud",
+"href":"","target":"","ref":"communication",
+"notificationTitre":"",
+"notificationTexte":"",
+"colonnes":[
+{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"",
+"ref":"","href":"","target":"",
+"bulle":"",
+"new":""
+},{
+"titre":"accueil",
+"ref":"accueilcloud","href":"#","target":"",
+"bulle":"accueil",
+"new":""
+},{
+"titre":"mail",
+"ref":"mail","href":"#","target":"",
+"bulle":"mail",
+"new":""
+},{
+"titre":"bo&icirc;tes vocales",
+"ref":"boitevocale","href":"#","target":"",
+"bulle":"bo&icirc;tes vocales",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"",
+"ref":"","href":"","target":"",
+"bulle":"",
+"new":""
+},{
+"titre":"SMS/MMS",
+"ref":"smsmms","href":"#","target":"",
+"bulle":"SMS/MMS",
+"new":""
+},{
+"titre":"mes contacts",
+"ref":"contacts","href":"#","target":"",
+"bulle":"mes contacts",
+"new":""
+},{
+"titre":"agenda",
+"ref":"agenda","href":"#","target":"",
+"bulle":"agenda",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"",
+"ref":"","href":"","target":"",
+"bulle":"",
+"new":""
+},{
+"titre":"Le Cloud",
+"ref":"contenus","href":"#","target":"",
+"bulle":"Le Cloud",
+"new":""
+},{
+"titre":"Le Cloud sur mobile",
+"ref":"cloudmobile","href":"#","target":"",
+"bulle":"Le Cloud sur mobile",
+"new":""
+},{
+"titre":"tirages photo",
+"ref":"tiragesphoto","href":"#","target":"",
+"bulle":"tirages photo",
+"new":""
+}]
+},{
+"titre":"r&eacute;seaux sociaux",
+"filet":"0",
+"liens":[{
+"titre":"pages perso",
+"ref":"pagesperso","href":"#","target":"",
+"bulle":"pages perso",
+"new":""
+},{
+"titre":"mon pseudo",
+"ref":"pseudo","href":"#","target":"",
+"bulle":"mon pseudo",
+"new":""
+},{
+"titre":"tChat",
+"ref":"tchat","href":"#","target":"",
+"bulle":"tChat",
+"new":""
+}]
+}
+]},
+{"titre":"se divertir",
+"href":"","target":"","ref":"sedivertir",
+"notificationTitre":"",
+"notificationTexte":"",
+"colonnes":[
+{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"TV d'Orange",
+"ref":"tvdorange","href":"#","target":"",
+"bulle":"TV d'Orange",
+"new":""
+},{
+"titre":"chaines TV",
+"ref":"chainestv","href":"#","target":"",
+"bulle":"chaines TV",
+"new":""
+},{
+"titre":"vid&eacute;o &agrave; la demande",
+"ref":"vod","href":"#","target":"",
+"bulle":"vid&eacute;o &agrave; la demande",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"programme TV",
+"ref":"prgmtv","href":"#","target":"",
+"bulle":"programme TV",
+"new":""
+},{
+"titre":"musique avec Deezer",
+"ref":"musique","href":"#","target":"",
+"bulle":"musique avec Deezer",
+"new":""
+},{
+"titre":"Orange Cin&eacute;day",
+"ref":"cineday","href":"#","target":"",
+"bulle":"Orange Cin&eacute;day",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"vid&eacute;o avec Dailymotion",
+"ref":"dailymotion","href":"#","target":"",
+"bulle":"vid&eacute;o avec Dailymotion",
+"new":""
+},{
+"titre":"jeux",
+"ref":"jeu","href":"#","target":"",
+"bulle":"jeux",
+"new":""
+},{
+"titre":"jeux mobile",
+"ref":"jeumobile","href":"#","target":"",
+"bulle":"jeux mobile",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"lire avec Read and Go",
+"ref":"readandgo","href":"#","target":"",
+"bulle":"Read and Go",
+"new":""
+},{
+"titre":"sonneries",
+"ref":"sonnerie","href":"#","target":"",
+"bulle":"sonneries",
+"new":""
+}]
+}
+]},
+{"titre":"s'informer",
+"href":"","target":"","ref":"informer",
+"notificationTitre":"",
+"notificationTexte":"",
+"colonnes":[
+{
+"titre":"les derni&egrave;res nouvelles",
+"filet":"",
+"liens":[{
+"titre":"actu",
+"ref":"actu","href":"#","target":"",
+"bulle":"actualit&eacute;",
+"new":""
+},{
+"titre":"sports",
+"ref":"sports","href":"#","target":"",
+"bulle":"sports",
+"new":""
+},{
+"titre":"finances",
+"ref":"finances","href":"#","target":"",
+"bulle":"finances",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"",
+"ref":"","href":"","target":"",
+"bulle":"",
+"new":""
+},{
+"titre":"m&eacute;t&eacute;o",
+"ref":"meteo","href":"#","target":"",
+"bulle":"m&eacute;t&eacute;o",
+"new":""
+},{
+"titre":"pr&egrave;s de chez vous",
+"ref":"ville","href":"#","target":"",
+"bulle":"pr&egrave;s de chez vous",
+"new":""
+},{
+"titre":"horoscope",
+"ref":"horoscope","href":"#","target":"",
+"bulle":"horoscope",
+"new":""
+}]
+},{
+"titre":"magazine",
+"filet":"0",
+"liens":[{
+"titre":"auto",
+"ref":"auto","href":"#","target":"",
+"bulle":"auto",
+"new":""
+},{
+"titre":"tendances",
+"ref":"femmes","href":"#","target":"",
+"bulle":"tendances",
+"new":""
+},{
+"titre":"animO",
+"ref":"animo","href":"#","target":"",
+"bulle":"animO",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"",
+"ref":"","href":"","target":"",
+"bulle":"",
+"new":""
+},{
+"titre":"voyages",
+"ref":"voyages","href":"#","target":"",
+"bulle":"voyages",
+"new":""
+},{
+"titre":"le collectif",
+"ref":"collectif","href":"#","target":"",
+"bulle":"le collectif",
+"new":""
+}]
+}
+]},
+{"titre":"s'organiser",
+"href":"","target":"","ref":"organiser",
+"notificationTitre":"",
+"notificationTexte":"",
+"colonnes":[
+{
+"titre":"annuaire & recherches",
+"filet":"",
+"liens":[{
+"titre":"annuaire",
+"ref":"annuaire","href":"#","target":"",
+"bulle":"annuaire",
+"new":""
+},{
+"titre":"itin&eacute;raires & plans",
+"ref":"plan","href":"#","target":"",
+"bulle":"itin&eacute;raires & plans",
+"new":""
+},{
+"titre":"le Moteur",
+"ref":"moteur","href":"#","target":"",
+"bulle":"le Moteur",
+"new":""
+}]
+},{
+"titre":"",
+"filet":"",
+"liens":[{
+"titre":"",
+"ref":"","href":"","target":"",
+"bulle":"",
+"new":""
+},{
+"titre":"immobilier",
+"ref":"immobilier","href":"#","target":"",
+"bulle":"immobilier",
+"new":""
+},{
+"titre":"emploi",
+"ref":"emploi","href":"#","target":"",
+"bulle":"emploi",
+"new":""
+},{
+"titre":"rencontres",
+"ref":"rencontres","href":"#","target":"",
+"bulle":"rencontres",
+"new":""
+}]
+},{
+"titre":"services num&eacute;riques",
+"filet":"0",
+"liens":[{
+"titre":"logiciels gratuits",
+"ref":"logicielsgratuits","href":"#","target":"",
+"bulle":"logiciels gratuits",
+"new":""
+},{
+"titre":"applications mobiles",
+"ref":"applications","href":"#","target":"",
+"bulle":"applications mobiles",
+"new":""
+},{
+"titre":"services mobiles",
+"ref":"servicesmobiles","href":"#","target":"",
+"bulle":"services mobiles",
+"new":""
+}]
+},{
+"titre":"bons plans",
+"filet":"0",
+"liens":[{
+"titre":"shopping",
+"ref":"shopping","href":"#","target":"",
+"bulle":"shopping",
+"new":""
+},{
+"titre":"Cityvox",
+"ref":"cityvox","href":"#","target":"",
+"bulle":"Cityvox",
+"new":""
+},{
+"titre":"eBay bonnes affaires",
+"ref":"bonnesaffaires","href":"#","target":"",
+"bulle":"bonnes affaires",
+"new":""
+}]
+}
+]}
+]}
